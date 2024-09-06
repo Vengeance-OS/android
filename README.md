@@ -1,1 +1,61 @@
-# android
+![alt text][logo]
+
+[logo]: "Vengeance-OS"
+
+## 1. Grabbing the Source ##
+
+[Repo](http://source.android.com/source/developing.html) is a tool provided by Google that
+simplifies using [Git](http://git-scm.com/book) in the context of the Android source.
+
+### 1.1 Installing dependencies and Repo ###
+
+Several packages are needed in order to build crDroid
+```
+sudo apt install bc bison build-essential ccache curl flex g++-multilib gcc-multilib git git-lfs gnupg gperf imagemagick lib32ncurses5-dev lib32readline-dev lib32z1-dev liblz4-tool libncurses5 libncurses5-dev libsdl1.2-dev libssl-dev libwxgtk3.0-gtk3-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev
+```
+
+Install Repo tool
+```bash
+# Make a directory where Repo will be stored and add it to the path
+$ mkdir ~/bin
+$ PATH=~/bin:$PATH
+
+# Download Repo itself
+$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+
+# Make Repo executable
+$ chmod a+x ~/bin/repo
+```
+
+### 1.2 Initializing Repo ###
+
+```bash
+# Create a directory for the source files
+# This can be located anywhere (as long as the fs is case-sensitive)
+$ mkdir VengeanceOS
+$ cd VengeanceOS
+
+# Install Repo in the created directory
+$ repo init -u https://github.com/Vengeance-OS/android.git -b 14.0 --git-lfs
+```
+
+This is what you will run each time you want to pull in upstream changes. Keep in mind that on your
+first run, it is expected to take a while as it will download all the required Android source files
+and their change histories.
+
+```bash
+# Let Repo take care of all the hard work
+$ repo sync
+```
+
+```bash
+# Run to prepare our devices list
+$ . build/envsetup.sh
+# ... now run
+$ brunch devicecodename
+```
+
+## 2. Contributions ##
+
+To submit changes/patches, please send a pull request on GitHub. We will review and merge.
+
