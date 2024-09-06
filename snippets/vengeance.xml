@@ -7,7 +7,7 @@
            sync-j="4"
            revision="refs/heads/14.0" />
 
-  <remote  name="Vengeance-gitlab"
+  <remote  name="VengeanceOS-gitlab"
            fetch="https://gitlab.com/"
            sync-c="true"
            sync-j="4"
@@ -31,77 +31,77 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
-  <project path="build/soong" name="Vengeance-OSandroid/android_build_soong" groups="pdk,tradefed" remote="Vengeance-OS" >
+  <project path="build/soong" name="Vengeance-OS/android/android_build_soong" groups="pdk,tradefed" remote="Vengeance-OS" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
-  <project path="device/lineage/sepolicy" name="Vengeance-OSandroid/android_device_Vengeance-OS_sepolicy" remote="Vengeance-OS" />
+  <project path="device/lineage/sepolicy" name="Vengeance-OS/android/android_device_Vengeance-OS_sepolicy" remote="Vengeance-OS" />
 
-  <project path="external/arm-optimized-routines" name="Vengeance-OSandroid/android_external_arm-optimized-routines" groups="pdk" remote="Vengeance-OS" />
-  <project path="external/FadingEdgeLayout" name="Vengeance-OSandroid/android_external_FadingEdgeLayout" remote="Vengeance-OS" />
-  <project path="external/giflib" name="Vengeance-OSandroid/android_external_giflib" groups="pdk,qcom_msm8x26" remote="Vengeance-OS" />
-  <project path="external/jemalloc_new" name="Vengeance-OSandroid/android_external_jemalloc-new" groups="pdk" remote="Vengeance-OS" />
-  <project path="external/setupcompat" name="Vengeance-OSandroid/android_external_setupcompat" groups="pdk,sysui-studio" remote="Vengeance-OS" />
-  <project path="external/sqlite" name="Vengeance-OSandroid/android_external_sqlite" groups="pdk" remote="Vengeance-OS" />
+  <project path="external/arm-optimized-routines" name="Vengeance-OS/android/android_external_arm-optimized-routines" groups="pdk" remote="Vengeance-OS" />
+  <project path="external/FadingEdgeLayout" name="Vengeance-OS/android/android_external_FadingEdgeLayout" remote="Vengeance-OS" />
+  <project path="external/giflib" name="Vengeance-OS/android/android_external_giflib" groups="pdk,qcom_msm8x26" remote="Vengeance-OS" />
+  <project path="external/jemalloc_new" name="Vengeance-OS/android/android_external_jemalloc-new" groups="pdk" remote="Vengeance-OS" />
+  <project path="external/setupcompat" name="Vengeance-OS/android/android_external_setupcompat" groups="pdk,sysui-studio" remote="Vengeance-OS" />
+  <project path="external/sqlite" name="Vengeance-OS/android/android_external_sqlite" groups="pdk" remote="Vengeance-OS" />
 
-  <project path="frameworks/av" name="Vengeance-OSandroid/android_frameworks_av" groups="pdk" remote="Vengeance-OS" />
-  <project path="frameworks/base" name="Vengeance-OSandroid/android_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="Vengeance-OS" />
-  <project path="frameworks/libs/systemui" name="Vengeance-OSandroid/android_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="Vengeance-OS" />
-  <project path="frameworks/native" name="Vengeance-OSandroid/android_frameworks_native" groups="pdk" remote="Vengeance-OS" />
-  <project path="frameworks/opt/telephony" name="Vengeance-OSandroid/android_frameworks_opt_telephony" groups="pdk" remote="Vengeance-OS" />
+  <project path="frameworks/av" name="Vengeance-OS/android/android_frameworks_av" groups="pdk" remote="Vengeance-OS" />
+  <project path="frameworks/base" name="Vengeance-OS/android/android_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="Vengeance-OS" />
+  <project path="frameworks/libs/systemui" name="Vengeance-OS/android/android_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="Vengeance-OS" />
+  <project path="frameworks/native" name="Vengeance-OS/android/android_frameworks_native" groups="pdk" remote="Vengeance-OS" />
+  <project path="frameworks/opt/telephony" name="Vengeance-OS/android/android_frameworks_opt_telephony" groups="pdk" remote="Vengeance-OS" />
 
-  <project path="hardware/interfaces" name="Vengeance-OSandroid/android_hardware_interfaces" groups="pdk,sysui-studio" remote="Vengeance-OS" />
-  <project path="hardware/qcom-caf/sm8150/audio" name="Vengeance-OSandroid/android_hardware_qcom_audio" groups="qcom,msmnile" revision="14.0-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/display" name="Vengeance-OSandroid/android_hardware_qcom_display" groups="qcom" revision="14.0-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/media" name="Vengeance-OSandroid/android_hardware_qcom_media" groups="qcom,msmnile" revision="14.0-caf-sm8150" />
+  <project path="hardware/interfaces" name="Vengeance-OS/android/android_hardware_interfaces" groups="pdk,sysui-studio" remote="Vengeance-OS" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="Vengeance-OS/android/android_hardware_qcom_audio" groups="qcom,msmnile" revision="14.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/display" name="Vengeance-OS/android/android_hardware_qcom_display" groups="qcom" revision="14.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/media" name="Vengeance-OS/android/android_hardware_qcom_media" groups="qcom,msmnile" revision="14.0-caf-sm8150" />
 
-  <project path="lineage-sdk" name="Vengeance-OSandroid/android_lineage-sdk" remote="Vengeance-OS" />
+  <project path="lineage-sdk" name="Vengeance-OS/android/android_lineage-sdk" remote="Vengeance-OS" />
 
-  <project path="packages/apps/Backgrounds" name="Vengeance-OSandroid/android_packages_apps_Backgrounds" remote="Vengeance-OS" />
-  <project path="packages/apps/Contacts" name="Vengeance-OSandroid/android_packages_apps_Contacts" groups="pdk-fs" remote="Vengeance-OS" />
-  <project path="packages/apps/Vengeance-OSSettings" name="Vengeance-OSandroid/android_packages_apps_Vengeance-OSSettings" remote="Vengeance-OS" />
-  <project path="packages/apps/Dialer" name="Vengeance-OSandroid/android_packages_apps_Dialer" groups="pdk-fs" remote="Vengeance-OS" />
-  <project path="packages/apps/DocumentsUI" name="Vengeance-OSandroid/android_packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" remote="Vengeance-OS" />
-  <project path="packages/apps/FaceUnlock" name="Vengeance-OSandroid/android_packages_apps_FaceUnlock" remote="Vengeance-OS-gitlab" />
-  <project path="packages/apps/GameSpace" name="Vengeance-OSandroid/android_packages_apps_GameSpace" remote="Vengeance-OS" />
-  <project path="packages/apps/Launcher3" name="Vengeance-OSandroid/android_packages_apps_Launcher3" groups="pdk-fs,sysui-studio" remote="Vengeance-OS" />
-  <project path="packages/apps/LineageParts" name="Vengeance-OSandroid/android_packages_apps_LineageParts" remote="Vengeance-OS" />
-  <project path="packages/apps/Matlog" name="Vengeance-OSandroid/android_packages_apps_Matlog" remote="Vengeance-OS" />
-  <project path="packages/apps/Messaging" name="Vengeance-OSandroid/android_packages_apps_Messaging" groups="pdk-fs" remote="Vengeance-OS" />
-  <project path="packages/apps/Nfc" name="Vengeance-OSandroid/android_packages_apps_Nfc" groups="apps_nfc,pdk-fs" remote="Vengeance-OS" />
-  <project path="packages/apps/OmniStyle" name="Vengeance-OSandroid/android_packages_apps_OmniStyle" remote="Vengeance-OS" />
-  <project path="packages/apps/Settings" name="Vengeance-OSandroid/android_packages_apps_Settings" groups="pdk-fs" remote="Vengeance-OS" />
-  <project path="packages/apps/SetupWizard" name="Vengeance-OSandroid/android_packages_apps_SetupWizard" remote="Vengeance-OS" />
-  <project path="packages/apps/ThemePicker" name="Vengeance-OSandroid/android_packages_apps_ThemePicker" groups="pdk-fs" remote="Vengeance-OS" />
-  <project path="packages/apps/Updater" name="Vengeance-OSandroid/android_packages_apps_Updater" remote="Vengeance-OS" />
-  <project path="packages/apps/WallpaperPicker2" name="Vengeance-OSandroid/android_packages_apps_WallpaperPicker2" groups="pdk-fs,sysui-studio" remote="Vengeance-OS" />
-  <project path="packages/inputmethods/LatinIME" name="Vengeance-OSandroid/android_packages_inputmethods_LatinIME" groups="pdk-fs" remote="Vengeance-OS" />
-  <project path="packages/modules/Bluetooth" name="Vengeance-OSandroid/android_packages_modules_Bluetooth" groups="pdk" remote="Vengeance-OS" />
-  <project path="packages/modules/Connectivity" name="Vengeance-OSandroid/android_packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="Vengeance-OS" />
-  <project path="packages/modules/Permission" name="Vengeance-OSandroid/android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="Vengeance-OS" />
-  <project path="packages/modules/StatsD" name="Vengeance-OSandroid/android_packages_modules_StatsD" groups="pdk-cw-fs,pdk-fs" remote="Vengeance-OS" />
-  <project path="packages/modules/Wifi" name="Vengeance-OSandroid/android_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="Vengeance-OS" />
-  <project path="packages/services/DeviceAsWebcam" name="Vengeance-OSandroid/android_packages_services_DeviceAsWebcam" remote="Vengeance-OS" />
-  <project path="packages/services/OmniJaws" name="Vengeance-OSandroid/android_packages_services_OmniJaws" remote="Vengeance-OS" />
-  <project path="packages/services/Telecomm" name="Vengeance-OSandroid/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="Vengeance-OS" />
+  <project path="packages/apps/Backgrounds" name="Vengeance-OS/android/android_packages_apps_Backgrounds" remote="Vengeance-OS" />
+  <project path="packages/apps/Contacts" name="Vengeance-OS/android/android_packages_apps_Contacts" groups="pdk-fs" remote="Vengeance-OS" />
+  <project path="packages/apps/Vengeance-OSSettings" name="Vengeance-OS/android/android_packages_apps_Vengeance-OSSettings" remote="Vengeance-OS" />
+  <project path="packages/apps/Dialer" name="Vengeance-OS/android/android_packages_apps_Dialer" groups="pdk-fs" remote="Vengeance-OS" />
+  <project path="packages/apps/DocumentsUI" name="Vengeance-OS/android/android_packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" remote="Vengeance-OS" />
+  <project path="packages/apps/FaceUnlock" name="Vengeance-OS/android/android_packages_apps_FaceUnlock" remote="Vengeance-OS-gitlab" />
+  <project path="packages/apps/GameSpace" name="Vengeance-OS/android/android_packages_apps_GameSpace" remote="Vengeance-OS" />
+  <project path="packages/apps/Launcher3" name="Vengeance-OS/android/android_packages_apps_Launcher3" groups="pdk-fs,sysui-studio" remote="Vengeance-OS" />
+  <project path="packages/apps/LineageParts" name="Vengeance-OS/android/android_packages_apps_LineageParts" remote="Vengeance-OS" />
+  <project path="packages/apps/Matlog" name="Vengeance-OS/android/android_packages_apps_Matlog" remote="Vengeance-OS" />
+  <project path="packages/apps/Messaging" name="Vengeance-OS/android/android_packages_apps_Messaging" groups="pdk-fs" remote="Vengeance-OS" />
+  <project path="packages/apps/Nfc" name="Vengeance-OS/android/android_packages_apps_Nfc" groups="apps_nfc,pdk-fs" remote="Vengeance-OS" />
+  <project path="packages/apps/OmniStyle" name="Vengeance-OS/android/android_packages_apps_OmniStyle" remote="Vengeance-OS" />
+  <project path="packages/apps/Settings" name="Vengeance-OS/android/android_packages_apps_Settings" groups="pdk-fs" remote="Vengeance-OS" />
+  <project path="packages/apps/SetupWizard" name="Vengeance-OS/android/android_packages_apps_SetupWizard" remote="Vengeance-OS" />
+  <project path="packages/apps/ThemePicker" name="Vengeance-OS/android/android_packages_apps_ThemePicker" groups="pdk-fs" remote="Vengeance-OS" />
+  <project path="packages/apps/Updater" name="Vengeance-OS/android/android_packages_apps_Updater" remote="Vengeance-OS" />
+  <project path="packages/apps/WallpaperPicker2" name="Vengeance-OS/android/android_packages_apps_WallpaperPicker2" groups="pdk-fs,sysui-studio" remote="Vengeance-OS" />
+  <project path="packages/inputmethods/LatinIME" name="Vengeance-OS/android/android_packages_inputmethods_LatinIME" groups="pdk-fs" remote="Vengeance-OS" />
+  <project path="packages/modules/Bluetooth" name="Vengeance-OS/android/android_packages_modules_Bluetooth" groups="pdk" remote="Vengeance-OS" />
+  <project path="packages/modules/Connectivity" name="Vengeance-OS/android/android_packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="Vengeance-OS" />
+  <project path="packages/modules/Permission" name="Vengeance-OS/android/android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="Vengeance-OS" />
+  <project path="packages/modules/StatsD" name="Vengeance-OS/android/android_packages_modules_StatsD" groups="pdk-cw-fs,pdk-fs" remote="Vengeance-OS" />
+  <project path="packages/modules/Wifi" name="Vengeance-OS/android/android_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="Vengeance-OS" />
+  <project path="packages/services/DeviceAsWebcam" name="Vengeance-OS/android/android_packages_services_DeviceAsWebcam" remote="Vengeance-OS" />
+  <project path="packages/services/OmniJaws" name="Vengeance-OS/android/android_packages_services_OmniJaws" remote="Vengeance-OS" />
+  <project path="packages/services/Telecomm" name="Vengeance-OS/android/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="Vengeance-OS" />
 
-  <project path="prebuilts/build-tools" name="Vengeance-OSandroid/android_prebuilts_build-tools" groups="pdk,sysui-studio" remote="Vengeance-OS" />
+  <project path="prebuilts/build-tools" name="Vengeance-OS/android/android_prebuilts_build-tools" groups="pdk,sysui-studio" remote="Vengeance-OS" />
   <!-- Clang 19.0.1 -->
-  <project path="prebuilts/clang/host/linux-x86/clang-latest" name="Vengeance-OSandroid/android_prebuilts_clang_host_linux-x86_clang-r536225" remote="Vengeance-OS-gitlab" />
+  <project path="prebuilts/clang/host/linux-x86/clang-latest" name="Vengeance-OS/android/android_prebuilts_clang_host_linux-x86_clang-r536225" remote="VengeanceOS-gitlab" />
 
-  <project path="system/core" name="Vengeance-OSandroid/android_system_core" groups="pdk" remote="Vengeance-OS" />
-  <project path="system/hardware/interfaces" name="Vengeance-OSandroid/android_system_hardware_interfaces" groups="pdk,sysui-studio" remote="Vengeance-OS" />
-  <project path="system/libhwbinder" name="Vengeance-OSandroid/android_system_libhwbinder" groups="pdk" remote="Vengeance-OS" />
-  <project path="system/netd" name="Vengeance-OSandroid/android_system_netd" groups="pdk" remote="Vengeance-OS" />
-  <project path="system/sepolicy" name="Vengeance-OSandroid/android_system_sepolicy" groups="pdk" remote="Vengeance-OS" />
-  <project path="system/update_engine" name="Vengeance-OSandroid/android_system_update_engine" groups="pdk" remote="Vengeance-OS" />
-  <project path="system/vold" name="Vengeance-OSandroid/android_system_vold" groups="pdk" remote="Vengeance-OS" />
+  <project path="system/core" name="Vengeance-OS/android/android_system_core" groups="pdk" remote="Vengeance-OS" />
+  <project path="system/hardware/interfaces" name="Vengeance-OS/android/android_system_hardware_interfaces" groups="pdk,sysui-studio" remote="Vengeance-OS" />
+  <project path="system/libhwbinder" name="Vengeance-OS/android/android_system_libhwbinder" groups="pdk" remote="Vengeance-OS" />
+  <project path="system/netd" name="Vengeance-OS/android/android_system_netd" groups="pdk" remote="Vengeance-OS" />
+  <project path="system/sepolicy" name="Vengeance-OS/android/android_system_sepolicy" groups="pdk" remote="Vengeance-OS" />
+  <project path="system/update_engine" name="Vengeance-OS/android/android_system_update_engine" groups="pdk" remote="Vengeance-OS" />
+  <project path="system/vold" name="Vengeance-OS/android/android_system_vold" groups="pdk" remote="Vengeance-OS" />
 
-  <project path="toolchain/pgo-profiles" name="Vengeance-OSandroid/android_toolchain_pgo-profiles" groups="pdk" remote="Vengeance-OS" />
+  <project path="toolchain/pgo-profiles" name="Vengeance-OS/android/android_toolchain_pgo-profiles" groups="pdk" remote="Vengeance-OS" />
 
-  <project path="vendor/addons" name="Vengeance-OSandroid/android_vendor_addons" remote="Vengeance-OS" />
-  <project path="vendor/Vengeance-OSOTA" name="Vengeance-OSandroid/android_vendor_Vengeance-OSOTA" remote="Vengeance-OS" />
-  <project path="vendor/lineage" name="Vengeance-OSandroid/android_vendor_Vengeance-OS" remote="Vengeance-OS" />
-  <project path="vendor/pixel-framework" name="Vengeance-OSandroid/android_vendor_pixel-framework" remote="Vengeance-OS" />
+  <project path="vendor/addons" name="Vengeance-OS/android/android_vendor_addons" remote="Vengeance-OS" />
+  <project path="vendor/Vengeance-OSOTA" name="Vengeance-OS/android/android_vendor_Vengeance-OSOTA" remote="Vengeance-OS" />
+  <project path="vendor/lineage" name="Vengeance-OS/android/android_vendor_Vengeance-OS" remote="Vengeance-OS" />
+  <project path="vendor/pixel-framework" name="Vengeance-OS/android/android_vendor_pixel-framework" remote="Vengeance-OS" />
 </manifest>
